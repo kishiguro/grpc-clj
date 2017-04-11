@@ -27,7 +27,7 @@ $ brew install gradle
 ### Prepare build.gradle and proto file.
 
 We use stripped version of gRPC Java
-Example [build.gradle](https://github.com/kishiguro/grpc-clj/build.grade).
+Example [build.gradle](https://github.com/kishiguro/grpc-clj/bblob/master/build.grade).
 Original bulid.gradle is located
 at [here](https://github.com/grpc/grpc-java/blob/master/examples/build.gradle).
 
