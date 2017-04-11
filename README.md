@@ -48,7 +48,16 @@ BUILD SUCCESSFUL
 Total time: 11.012 secs
 ```
 
+This will generate gRPC java stub under `build` directory from `route_guide.proto`.
+
 ### Leiningen for Java and Clojure mixed-code
+
+To use Java and Clojure mixed-code, `:java-source-paths` parameter to set up
+`project.clj`.
+
+``` clojure
+  :java-source-paths ["build/generated/source/proto/main"]
+```
 
 ### Example Server
 
