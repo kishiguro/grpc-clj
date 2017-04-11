@@ -8,29 +8,45 @@ To use gRPC from Clojure, we need to set
 up [gRPC Java](https://github.com/grpc/grpc-java) environment first. We can use
 Maven or Gradle for project set up. In this example, we use Gradle.
 
-#### Install Gradle
+### Install Gradle
+
+When gradle is not installed on your system, need to install it first.
 
 * Linux
 
-	`$ sudo apt install gradle`
+``` bash
+$ sudo apt install gradle
+```
 
 * Mac OS
 
-	`$ brew install gradle`
+``` bash
+$ brew install gradle
+```
 
-#### Prepare build.gradle
+### Prepare build.gradle and proto file.
 
 We use stripped version of gRPC Java
 Example [build.gradle](https://github.com/kishiguro/grpc-clj/build.grade).
 Original bulid.gradle is located
 at [here](https://github.com/grpc/grpc-java/blob/master/examples/build.gradle).
 
-``` groovy
-// Feel free to delete the comment at the next line. It is just for safely
-// updating the version in our release process.
-def grpcVersion = '1.1.2' // CURRENT_GRPC_VERSION
-```
+Proto file location is `src/main/proto`. In this example, `route_guide.proto` is
+set as proto file.
 
+Generate project with gradle.
+
+``` bash
+$ gradle generateProto
+Starting a Gradle Daemon (subsequent builds will be faster)
+:extractIncludeProto
+:extractProto
+:generateProto NO-SOURCE
+
+BUILD SUCCESSFUL
+
+Total time: 11.012 secs
+```
 
 ### Leiningen for Java and Clojure mixed-code
 
