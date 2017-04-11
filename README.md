@@ -31,8 +31,8 @@ Example [build.gradle](https://github.com/kishiguro/grpc-clj/blob/master/build.g
 Original bulid.gradle is located
 at [here](https://github.com/grpc/grpc-java/blob/master/examples/build.gradle).
 
-Proto file location is `src/main/proto`. In this example, `route_guide.proto` is
-set as proto file.
+Proto file should be located in `src/main/proto`. In this example, `route_guide.proto` is
+used.
 
 Generate project with gradle.
 
